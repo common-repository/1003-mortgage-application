@@ -1,0 +1,63 @@
+{
+    "packages": [
+        {
+            "name": "alledia/edd-sl-plugin-updater",
+            "version": "v1.6.23",
+            "version_normalized": "1.6.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/publishpress/EDD-SL-Plugin-Updater.git",
+                "reference": "38253d04ac8875a88f62a3ebdca8034473f77418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/publishpress/EDD-SL-Plugin-Updater/zipball/38253d04ac8875a88f62a3ebdca8034473f77418",
+                "reference": "38253d04ac8875a88f62a3ebdca8034473f77418",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6.20"
+            },
+            "time": "2023-08-30T19:32:16+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "EDD_SL_Plugin_Updater.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "EasyDigitalDownloads",
+                    "email": "contact@easydigitaldownloads.com"
+                },
+                {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com"
+                },
+                {
+                    "name": "Alledia",
+                    "email": "help@alledia.com"
+                }
+            ],
+            "description": "EDD Updates Handler for WordPress Plugins",
+            "keywords": [
+                "edd",
+                "updates",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/publishpress/EDD-SL-Plugin-Updater/issues",
+                "source": "https://github.com/publishpress/EDD-SL-Plugin-Updater/tree/v1.6.23"
+            },
+            "install-path": "../alledia/edd-sl-plugin-updater"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

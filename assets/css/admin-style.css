@@ -1,0 +1,452 @@
+/*General*/
+.send-on-webhook-button-container .button-large {
+	margin: 5px 5px 5px 5px;
+	width: 100%;
+	text-align: center;
+}
+.single-row {
+	width: 50%;
+	float: left;
+}
+.mortgage-report-filter-container {
+	max-width: 600px;
+	margin: 100px auto 0 auto;
+	background-color: #ffffff;
+}
+.mortgage-report-filter-container h1.title {
+	background-color: #23282d;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px 20px;
+}
+.mortgage-report-filter {
+	padding: 20px 30px;
+	text-align: center;
+}
+.mortgage-report-filter .filter-fields {
+	display: inline-block;
+	vertical-align: middle;
+}
+.mortgage-report-filter .filter-fields .start-date,
+.mortgage-report-filter .filter-fields .end-date {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.mortgage-report-filter .filter-fields .start-date label,
+.mortgage-report-filter .filter-fields .end-date label {
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	color: #0073aa;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.mortgage-report-filter .filter-action {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.mortgage-report-container .mortgage_result {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	background-color: #0073aa;
+	padding: 20px;
+}
+.mortgage-report-container .mortgage_result .mortgage_column {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 500;
+}
+.mortgage-report-container .mortgage_result .mortgage_column .mortgage_column_heading {
+	margin-bottom: 10px;
+}
+.mortgage-report-filter .filter-action input.application_filter {
+	background: #0073aa;
+	border: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 0.88889em;
+	font-weight: 700;
+	line-height: 1.2;
+	outline: none;
+	padding: 10px 30px;
+	text-decoration: none;
+	vertical-align: bottom;
+	text-transform: uppercase;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+.mortgage-report-filter .filter-action input.application_filter:hover {
+	background: #099fe6;
+}
+.mortgage-report-filter .filter-fields .start-date input,
+.mortgage-report-filter .filter-fields .end-date input {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-family: inherit;
+	padding: 5px 10px;
+	color: #000;
+	max-width: calc(100% - 2px);
+	min-height: 33px;
+	display: block;
+	width: 100%;
+}
+.mortgage_column.mortgage_column_one {
+	position: relative;
+}
+.mortgage_column.mortgage_column_one:after {
+	background-color: #fff;
+	display: block;
+	width: 1px;
+	height: 100%;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.mortgage_application_data_box p.meta-options.mortgage_application_field label {
+	font-weight: 700;
+	background-color: #eaf2fa;
+	border-bottom: 1px solid #fff;
+	line-height: 1.5;
+	padding: 10px 12px;
+	color: #555;
+	font-size: 13px;
+	display: block;
+}
+.mortgage_application_data_box p.meta-options.mortgage_application_field span {
+	border-bottom: 1px solid #dfdfdf;
+	padding: 7px 7px 7px 40px;
+	line-height: 1.8;
+	display: block;
+}
+p.meta-options.mortgage_application_field {
+	margin: 0;
+}
+#type_of_loan .inside {
+	padding: 0;
+	margin: 0;
+}
+p.meta-options.mortgage_application_field span#application_short_url a {
+	display: inline-block;
+	vertical-align: middle;
+}
+p.meta-options.mortgage_application_field span#application_short_url input {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 12px 2px;
+	background: #0085ba;
+	border-color: #0073aa #006799 #006799;
+	box-shadow: 0 1px 0 #006799;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+	vertical-align: middle;
+	font-size: 13px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	margin: 0;
+	display: inline-block;
+	margin-left: 20px;
+}
+p.meta-options.mortgage_application_field span#application_short_url input:hover {
+	background: #008ec2;
+	border-color: #006799;
+	color: #fff;
+}
+.mortgage-application-setting-overlay {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	padding: 10px 10px;
+	z-index: 99;
+	max-width: 400px;
+	border: 5px solid #d1d1d1;
+}
+.mortgage-application-setting-fade {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+.mortgage-application-setting-overlay h1.title {
+	padding: 0 0 10px 0;
+	margin-bottom: 10px;
+	border-bottom: 0.5px solid #d1d1d1;
+}
+.mortgage-application-setting-overlay input#mortgage_application_admin_terms {
+	margin-top: 10px;
+	background: #d1d1d1;
+	border: 0;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+/*Toggles*/
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+}
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 19px;
+	width: 19px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+input:checked + .slider {
+	background-color: #46b450;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #46b450;
+}
+input:checked + .slider:before {
+	-webkit-transform: translateX(25px);
+	-ms-transform: translateX(25px);
+	transform: translateX(25px);
+}
+
+.ma_setting .input-field {
+	float: left;
+	width: calc(80% - 60px);
+}
+.ma_setting .switch {
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+/*Rounded Sliders*/
+.slider.round {
+	border-radius: 34px;
+}
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/*Form Stuff*/
+.ma_form_setting .input-field {
+	float: left;
+	width: calc(80% - 60px);
+}
+.ma_form_setting .switch {
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+.ma_form_setting .input-field input {
+	width: 100%;
+}
+.wrap.export-application .container {
+	margin-top: 30px;
+}
+.specific-radio-application label,
+.specific-radio-application input[type="radio"] {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.specific-radio-application label {
+	margin-right: 20px;
+}
+.wrap.export-application .field-row {
+	margin: 20px 0;
+}
+.wrap.export-application .field-row.condition-select-box label {
+	margin-bottom: 10px;
+}
+.wrap.export-application .field-row label {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 600;
+}
+.wrap.export-application .field-row .condition_table_fields {
+	display: block;
+	float: left;
+}
+.condition_table {
+	clear: both;
+	margin-bottom: 10px;
+}
+.condition_table:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.wrap.export-application .field-row.date_range_class label {
+	display: block;
+	margin-bottom: 10px;
+}
+.wrap.export-application {
+	background-color: #fff;
+	padding: 10px 30px;
+	max-width: 800px;
+	box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin-top: 30px;
+}
+.wrap.export-application .field-row.date_range_class input {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+.wrap.export-application .field-row .condition_table_fields select.arg1,
+.export_type_class select,
+.specific-application input[type="text"] {
+	width: 270px;
+}
+.condition_table_fields img {
+	margin-top: 7px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/*License Keys*/
+.licenses-key-container input {
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 370px;
+	margin-left: 10px;
+}
+.licenses-key-container label {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 600;
+}
+span.licesnses-status.activated {
+	font-size: 0;
+	background-image: url(../img/correct.png);
+	background-size: 20px auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+span.licesnses-status.deactivated {
+	font-size: 0;
+	background-image: url(../img/cancel.png);
+	background-size: 20px auto;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.specific-application select#applications,
+.specific-application select#application_fields {
+	display: block;
+	margin-left: 145px;
+	min-width: 270px;
+}
+.wrap.export-application .field-row > label {
+	max-width: 140px;
+	width: 100%;
+}
+
+/*Menu*/
+#adminmenu .wp-menu-image img {
+	max-height: 19px;
+}
+
+/*Upload*/
+.map_dwn_file_by_id,
+.map_dwn_file {
+	background: #1dbc60;
+	border: 0;
+	color: #fff;
+	border-radius: 3px;
+	padding: 7px 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 12px;
+	margin: -10px;
+}
+
+/*General Settings*/
+.mortgage-setting-container .form-table {
+	max-width: 850px;
+}
+.mortgage-setting-container input,
+.mortgage-setting-container textarea {
+	border-radius: 3px;
+	box-shadow: 0 0;
+	padding: 5px 10px;
+	border-color: #ccc;
+}
+.mortgage-setting-container textarea {
+	height: 150px;
+}
+.mortgage-setting-container input[name="mortgage_application_test_webhooks"] {
+	border-radius: 3px;
+	box-shadow: 0 0;
+	padding: 5px 15px;
+	text-shadow: 0 0;
+	background: #b8312f;
+	border: 0;
+	height: auto;
+}
+.mortgage-setting-container input[name="mortgage_application_test_webhooks"]:hover {
+	background: #b8312f;
+	opacity: 0.8;
+	border: 0;
+	outline: 0;
+}
+
+.mortgage-setting-container input#mortgage_application_button_color {
+	padding: 0px;
+	width: 40px;
+	height: 30px;
+	margin: 0px;
+}
+.mortgage-setting-container input#mortgage_application_progress_bar_color {
+	padding: 0px;
+	width: 40px;
+	height: 30px;
+	margin: 0px;
+}
+.client_email_recipients_hide {
+	display: none;
+}
+.client_email_recipients_show {
+	display: table-row;
+}
